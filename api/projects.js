@@ -1,6 +1,6 @@
 const { getProjects } = require('../services/notion')
 
-module.exports = async (req, res) => {
+module.exports = async (_, res) => {
 	try {
 		const projects = await getProjects()
 		res.json(projects)

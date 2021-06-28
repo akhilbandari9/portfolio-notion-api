@@ -1,3 +1,4 @@
+req('dotenv').config()
 const { Client } = require('@notionhq/client')
 // const util = require('util')
 const notion = new Client({ auth: process.env.NOTION_API_SECRET })
