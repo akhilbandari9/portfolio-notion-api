@@ -1,5 +1,5 @@
 const { Client } = require('@notionhq/client')
-const util = require('util')
+// const util = require('util')
 const notion = new Client({ auth: process.env.NOTION_API_SECRET })
 const databseId = process.env.NOTION_DATABASE_ID
 
