@@ -6,6 +6,7 @@ module.exports = async (req, res) => {
 			const projects = await getProjects()
 			res.json(projects)
 		} else {
+			console.log(req.params)
 			const { pageId } = req.params
 			const result = await getProjectDetails(pageId)
 			res.json(result)
