@@ -11,7 +11,6 @@ router.get('/', async (_, res) => {
 })
 
 router.get('/:pageId', async (req, res) => {
-	console.log(req.params)
 	try {
 		const { pageId } = req.params
 		const result = await getProjectDetails(pageId)
